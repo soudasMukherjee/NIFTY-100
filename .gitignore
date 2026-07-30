@@ -1,0 +1,140 @@
+# ==========================================================
+# SENSITIVE CREDENTIALS & ENVIRONMENT FILES
+# ==========================================================
+
+# Environment / secrets files — contain API keys, DB passwords, tokens
+.env
+.env.*
+!.env.example
+
+# Private keys and certificates
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+*.der
+id_rsa
+id_rsa.pub
+id_ecdsa
+id_ecdsa.pub
+id_ed25519
+id_ed25519.pub
+ssh_config
+*.ssh/
+
+# Cloud provider credentials
+aws/
+.aws/
+.gcp/
+.azure/
+credentials.json
+*.sublime-workspace
+
+# ==========================================================
+# HEAVY DEPENDENCIES & LOCAL PACKAGES
+# ==========================================================
+
+# node (if ever used)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python virtual environments
+venv/
+.env/
+.venv/
+env/
+envs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+*.egg
+
+# Python bytecode and cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+*.so
+
+# ==========================================================
+# DATABASE FILES
+# ==========================================================
+
+# Generated SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
+# ==========================================================
+# SYSTEM & BUILD OUTPUT FILES
+# ==========================================================
+
+# Compiled / build output directories
+dist/
+build/
+out/
+*.exe
+*.dll
+*.dylib
+
+# Operating system files
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Log files
+*.log
+
+# ==========================================================
+# PROJECT-SPECIFIC GENERATED OUTPUTS
+# ==========================================================
+
+# Generated from ETL pipeline — re-creatable via `make load`
+output/
+reports/
+
+# Debug / scratch scripts (private one-off investigations)
+_debug_*.py
+_verify_*.py
+_check_*.py
+_fix_*.py
+_test_*.py
+_day*_verify.py
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+.vs/
+
+# ==========================================================
+# MISC
+# ==========================================================
+
+# OS generated files (macOS/Windows)
+*.icloud
+*.lnk
+.fseventsd
+
